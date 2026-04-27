@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${PROJECT_NAME}-backend
+    env_file:
+      - .env
+    environment:
+      BACKEND_PORT: 3000
+      DB_TYPE: sqlite
+    ports:
+      - "${BACKEND_PORT}:3000"
+    volumes:
+      - ./data:/app/data
+
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: http://localhost:${BACKEND_PORT}/api
+    container_name: ${PROJECT_NAME}-frontend
+    depends_on:
+      - backend
+    ports:
+      - "${FRONTEND_PORT}:80"

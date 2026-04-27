@@ -1,0 +1,29 @@
+{
+  "projectName": "cab-booking-management-system",
+  "template": "management",
+  "projectCategory": {
+    "id": "web",
+    "displayName": "Web Application",
+    "description": "Browser-based projects with frontend, backend APIs, database, Docker, documentation, and screenshots."
+  },
+  "stack": {
+    "id": "react-springboot",
+    "displayName": "React + Spring Boot",
+    "frontend": "react",
+    "backend": "springboot",
+    "starter": "react-springboot-starter",
+    "status": "implemented"
+  },
+  "database": {
+    "id": "sqlite",
+    "displayName": "SQLite",
+    "typeormType": "sqlite",
+    "driverPackage": "sqlite3",
+    "dockerService": null,
+    "dockerImage": null,
+    "defaultPort": 0,
+    "hostPort": 0,
+    "status": "implemented"
+  },
+  "generatedAt": "2026-04-27T02:23:59.283Z"
+}

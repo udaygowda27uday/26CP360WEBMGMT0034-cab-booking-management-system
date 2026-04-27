@@ -1,0 +1,485 @@
+{
+  "admin": {
+    "email": "admin@example.com",
+    "password": "Admin@123",
+    "displayName": "System Admin",
+    "role": "admin"
+  },
+  "categories": [
+    "Cab Booking Customers",
+    "Cab Booking Slots",
+    "Cab Bookings",
+    "Cab Booking Payments",
+    "Cab Booking Cancellations"
+  ],
+  "departments": [
+    "Booking Admin",
+    "Front Desk",
+    "Customer Support",
+    "Manager"
+  ],
+  "records": [
+    {
+      "title": "Cab Booking Event Ticket Request",
+      "description": "Customer Code: CBC-2026-0001 | Name: Aarav Sharma | Category: Cab Operations | Owner Name: Aarav Sharma",
+      "status": "Active"
+    },
+    {
+      "title": "Cab Booking Cab Reservation",
+      "description": "Customer Code: CBC-2026-0002 | Name: Diya Patel | Category: Cab Service | Owner Name: Diya Patel",
+      "status": "Pending Review"
+    },
+    {
+      "title": "Cab Booking Equipment Booking",
+      "description": "Customer Code: CBC-2026-0003 | Name: Rohan Mehta | Category: Cab Review | Owner Name: Rohan Mehta",
+      "status": "Approved"
+    },
+    {
+      "title": "Cab Booking Room Booking Slot",
+      "description": "Customer Code: CBC-2026-0004 | Name: Ananya Rao | Category: Cab Support | Owner Name: Ananya Rao",
+      "status": "In Progress"
+    },
+    {
+      "title": "Cab Booking Event Ticket Request",
+      "description": "Customer Code: CBC-2026-0005 | Name: Kabir Singh | Category: Cab Operations | Owner Name: Kabir Singh",
+      "status": "Closed"
+    },
+    {
+      "title": "Cab Booking Cab Reservation",
+      "description": "Customer Code: CBC-2026-0006 | Name: Isha Nair | Category: Cab Service | Owner Name: Isha Nair",
+      "status": "Escalated"
+    },
+    {
+      "title": "Cab Booking Equipment Booking",
+      "description": "Customer Code: CBC-2026-0007 | Name: Arjun Verma | Category: Cab Review | Owner Name: Arjun Verma",
+      "status": "Active"
+    },
+    {
+      "title": "Cab Booking Room Booking Slot",
+      "description": "Customer Code: CBC-2026-0008 | Name: Meera Iyer | Category: Cab Support | Owner Name: Meera Iyer",
+      "status": "Pending Review"
+    },
+    {
+      "title": "Cab Booking Event Ticket Request",
+      "description": "Customer Code: CBC-2026-0009 | Name: Vivaan Joshi | Category: Cab Operations | Owner Name: Vivaan Joshi",
+      "status": "Approved"
+    },
+    {
+      "title": "Cab Booking Cab Reservation",
+      "description": "Customer Code: CBC-2026-0010 | Name: Sara Khan | Category: Cab Service | Owner Name: Sara Khan",
+      "status": "In Progress"
+    }
+  ],
+  "transactions": [
+    {
+      "type": "Create Booking",
+      "amount": 100,
+      "note": "Create Booking for cab booking with clear steps, ownership, and audit-ready status updates."
+    },
+    {
+      "type": "Reschedule Booking",
+      "amount": 200,
+      "note": "Reschedule Booking for cab booking with clear steps, ownership, and audit-ready status updates."
+    },
+    {
+      "type": "Process Cancellation",
+      "amount": 300,
+      "note": "Process Cancellation for cab booking with clear steps, ownership, and audit-ready status updates."
+    }
+  ],
+  "domainEntities": [
+    {
+      "name": "CabBookingCustomer",
+      "plural": "Cab Booking Customers",
+      "route": "/cab-booking-customers",
+      "seed": [
+        {
+          "customerCode": "CBC-2026-0001",
+          "name": "Aarav Sharma",
+          "category": "Cab Operations",
+          "ownerName": "Aarav Sharma",
+          "status": "Active",
+          "phone": "+91 9800000000",
+          "email": "aarav.sharma@example.edu",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "customerCode": "CBC-2026-0002",
+          "name": "Diya Patel",
+          "category": "Cab Service",
+          "ownerName": "Diya Patel",
+          "status": "Pending Review",
+          "phone": "+91 9800013791",
+          "email": "diya.patel@example.edu",
+          "title": "Cab Booking Cab Reservation"
+        },
+        {
+          "customerCode": "CBC-2026-0003",
+          "name": "Rohan Mehta",
+          "category": "Cab Review",
+          "ownerName": "Rohan Mehta",
+          "status": "Approved",
+          "phone": "+91 9800027582",
+          "email": "rohan.mehta@example.edu",
+          "title": "Cab Booking Equipment Booking"
+        },
+        {
+          "customerCode": "CBC-2026-0004",
+          "name": "Ananya Rao",
+          "category": "Cab Support",
+          "ownerName": "Ananya Rao",
+          "status": "In Progress",
+          "phone": "+91 9800041373",
+          "email": "ananya.rao@example.edu",
+          "title": "Cab Booking Room Booking Slot"
+        },
+        {
+          "customerCode": "CBC-2026-0005",
+          "name": "Kabir Singh",
+          "category": "Cab Operations",
+          "ownerName": "Kabir Singh",
+          "status": "Closed",
+          "phone": "+91 9800055164",
+          "email": "kabir.singh@example.edu",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "customerCode": "CBC-2026-0006",
+          "name": "Isha Nair",
+          "category": "Cab Service",
+          "ownerName": "Isha Nair",
+          "status": "Escalated",
+          "phone": "+91 9800068955",
+          "email": "isha.nair@example.edu",
+          "title": "Cab Booking Cab Reservation"
+        },
+        {
+          "customerCode": "CBC-2026-0007",
+          "name": "Arjun Verma",
+          "category": "Cab Review",
+          "ownerName": "Arjun Verma",
+          "status": "Active",
+          "phone": "+91 9800082746",
+          "email": "arjun.verma@example.edu",
+          "title": "Cab Booking Equipment Booking"
+        },
+        {
+          "customerCode": "CBC-2026-0008",
+          "name": "Meera Iyer",
+          "category": "Cab Support",
+          "ownerName": "Meera Iyer",
+          "status": "Pending Review",
+          "phone": "+91 9800096537",
+          "email": "meera.iyer@example.edu",
+          "title": "Cab Booking Room Booking Slot"
+        },
+        {
+          "customerCode": "CBC-2026-0009",
+          "name": "Vivaan Joshi",
+          "category": "Cab Operations",
+          "ownerName": "Vivaan Joshi",
+          "status": "Approved",
+          "phone": "+91 9800110328",
+          "email": "vivaan.joshi@example.edu",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "customerCode": "CBC-2026-0010",
+          "name": "Sara Khan",
+          "category": "Cab Service",
+          "ownerName": "Sara Khan",
+          "status": "In Progress",
+          "phone": "+91 9800124119",
+          "email": "sara.khan@example.edu",
+          "title": "Cab Booking Cab Reservation"
+        }
+      ]
+    },
+    {
+      "name": "CabBookingSlot",
+      "plural": "Cab Booking Slots",
+      "route": "/cab-booking-slots",
+      "seed": [
+        {
+          "slotCode": "CBS-2026-0001",
+          "name": "Aarav Sharma",
+          "category": "Cab Operations",
+          "ownerName": "Aarav Sharma",
+          "status": "Active",
+          "slotDate": "2026-05-01",
+          "capacity": "Pune",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "slotCode": "CBS-2026-0002",
+          "name": "Diya Patel",
+          "category": "Cab Service",
+          "ownerName": "Diya Patel",
+          "status": "Pending Review",
+          "slotDate": "2026-05-02",
+          "capacity": "Mumbai",
+          "title": "Cab Booking Cab Reservation"
+        },
+        {
+          "slotCode": "CBS-2026-0003",
+          "name": "Rohan Mehta",
+          "category": "Cab Review",
+          "ownerName": "Rohan Mehta",
+          "status": "Approved",
+          "slotDate": "2026-05-03",
+          "capacity": "Bengaluru",
+          "title": "Cab Booking Equipment Booking"
+        },
+        {
+          "slotCode": "CBS-2026-0004",
+          "name": "Ananya Rao",
+          "category": "Cab Support",
+          "ownerName": "Ananya Rao",
+          "status": "In Progress",
+          "slotDate": "2026-05-04",
+          "capacity": "Hyderabad",
+          "title": "Cab Booking Room Booking Slot"
+        },
+        {
+          "slotCode": "CBS-2026-0005",
+          "name": "Kabir Singh",
+          "category": "Cab Operations",
+          "ownerName": "Kabir Singh",
+          "status": "Closed",
+          "slotDate": "2026-05-05",
+          "capacity": "Ahmedabad",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "slotCode": "CBS-2026-0006",
+          "name": "Isha Nair",
+          "category": "Cab Service",
+          "ownerName": "Isha Nair",
+          "status": "Escalated",
+          "slotDate": "2026-05-06",
+          "capacity": "Jaipur",
+          "title": "Cab Booking Cab Reservation"
+        }
+      ]
+    },
+    {
+      "name": "CabBookingBooking",
+      "plural": "Cab Bookings",
+      "route": "/cab-booking-bookings",
+      "seed": [
+        {
+          "bookingCode": "CB-2026-0001",
+          "name": "Aarav Sharma",
+          "category": "Cab Operations",
+          "ownerName": "Aarav Sharma",
+          "status": "Active",
+          "bookingNo": "CB-2026-0001",
+          "bookingDate": "2026-05-01",
+          "bookingStatus": "Active",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "bookingCode": "CB-2026-0002",
+          "name": "Diya Patel",
+          "category": "Cab Service",
+          "ownerName": "Diya Patel",
+          "status": "Pending Review",
+          "bookingNo": "CB-2026-0002",
+          "bookingDate": "2026-05-02",
+          "bookingStatus": "Pending Review",
+          "title": "Cab Booking Cab Reservation"
+        },
+        {
+          "bookingCode": "CB-2026-0003",
+          "name": "Rohan Mehta",
+          "category": "Cab Review",
+          "ownerName": "Rohan Mehta",
+          "status": "Approved",
+          "bookingNo": "CB-2026-0003",
+          "bookingDate": "2026-05-03",
+          "bookingStatus": "Approved",
+          "title": "Cab Booking Equipment Booking"
+        },
+        {
+          "bookingCode": "CB-2026-0004",
+          "name": "Ananya Rao",
+          "category": "Cab Support",
+          "ownerName": "Ananya Rao",
+          "status": "In Progress",
+          "bookingNo": "CB-2026-0004",
+          "bookingDate": "2026-05-04",
+          "bookingStatus": "In Progress",
+          "title": "Cab Booking Room Booking Slot"
+        },
+        {
+          "bookingCode": "CB-2026-0005",
+          "name": "Kabir Singh",
+          "category": "Cab Operations",
+          "ownerName": "Kabir Singh",
+          "status": "Closed",
+          "bookingNo": "CB-2026-0005",
+          "bookingDate": "2026-05-05",
+          "bookingStatus": "Closed",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "bookingCode": "CB-2026-0006",
+          "name": "Isha Nair",
+          "category": "Cab Service",
+          "ownerName": "Isha Nair",
+          "status": "Escalated",
+          "bookingNo": "CB-2026-0006",
+          "bookingDate": "2026-05-06",
+          "bookingStatus": "Escalated",
+          "title": "Cab Booking Cab Reservation"
+        }
+      ]
+    },
+    {
+      "name": "CabBookingPayment",
+      "plural": "Cab Booking Payments",
+      "route": "/cab-booking-payments",
+      "seed": [
+        {
+          "paymentCode": "CBP-2026-0001",
+          "name": "Aarav Sharma",
+          "category": "Cab Operations",
+          "ownerName": "Aarav Sharma",
+          "status": "Active",
+          "paymentNo": "CBP-2026-0001",
+          "amount": 1250,
+          "paymentStatus": "Active",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "paymentCode": "CBP-2026-0002",
+          "name": "Diya Patel",
+          "category": "Cab Service",
+          "ownerName": "Diya Patel",
+          "status": "Pending Review",
+          "paymentNo": "CBP-2026-0002",
+          "amount": 2500,
+          "paymentStatus": "Pending Review",
+          "title": "Cab Booking Cab Reservation"
+        },
+        {
+          "paymentCode": "CBP-2026-0003",
+          "name": "Rohan Mehta",
+          "category": "Cab Review",
+          "ownerName": "Rohan Mehta",
+          "status": "Approved",
+          "paymentNo": "CBP-2026-0003",
+          "amount": 3750,
+          "paymentStatus": "Approved",
+          "title": "Cab Booking Equipment Booking"
+        },
+        {
+          "paymentCode": "CBP-2026-0004",
+          "name": "Ananya Rao",
+          "category": "Cab Support",
+          "ownerName": "Ananya Rao",
+          "status": "In Progress",
+          "paymentNo": "CBP-2026-0004",
+          "amount": 5000,
+          "paymentStatus": "In Progress",
+          "title": "Cab Booking Room Booking Slot"
+        },
+        {
+          "paymentCode": "CBP-2026-0005",
+          "name": "Kabir Singh",
+          "category": "Cab Operations",
+          "ownerName": "Kabir Singh",
+          "status": "Closed",
+          "paymentNo": "CBP-2026-0005",
+          "amount": 6250,
+          "paymentStatus": "Closed",
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "paymentCode": "CBP-2026-0006",
+          "name": "Isha Nair",
+          "category": "Cab Service",
+          "ownerName": "Isha Nair",
+          "status": "Escalated",
+          "paymentNo": "CBP-2026-0006",
+          "amount": 7500,
+          "paymentStatus": "Escalated",
+          "title": "Cab Booking Cab Reservation"
+        }
+      ]
+    },
+    {
+      "name": "CabBookingCancellation",
+      "plural": "Cab Booking Cancellations",
+      "route": "/cab-booking-cancellations",
+      "seed": [
+        {
+          "cancellationCode": "CBC-2026-0001",
+          "name": "Aarav Sharma",
+          "category": "Cab Operations",
+          "ownerName": "Aarav Sharma",
+          "status": "Active",
+          "cancellationNo": "CBC-2026-0001",
+          "reason": "Northstar Operations Cab Booking Cancellation 1",
+          "refundAmount": 1250,
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "cancellationCode": "CBC-2026-0002",
+          "name": "Diya Patel",
+          "category": "Cab Service",
+          "ownerName": "Diya Patel",
+          "status": "Pending Review",
+          "cancellationNo": "CBC-2026-0002",
+          "reason": "Greenfield Services Cab Booking Cancellation 2",
+          "refundAmount": 2500,
+          "title": "Cab Booking Cab Reservation"
+        },
+        {
+          "cancellationCode": "CBC-2026-0003",
+          "name": "Rohan Mehta",
+          "category": "Cab Review",
+          "ownerName": "Rohan Mehta",
+          "status": "Approved",
+          "cancellationNo": "CBC-2026-0003",
+          "reason": "BluePeak Solutions Cab Booking Cancellation 3",
+          "refundAmount": 3750,
+          "title": "Cab Booking Equipment Booking"
+        },
+        {
+          "cancellationCode": "CBC-2026-0004",
+          "name": "Ananya Rao",
+          "category": "Cab Support",
+          "ownerName": "Ananya Rao",
+          "status": "In Progress",
+          "cancellationNo": "CBC-2026-0004",
+          "reason": "MetroCare Group Cab Booking Cancellation 4",
+          "refundAmount": 5000,
+          "title": "Cab Booking Room Booking Slot"
+        },
+        {
+          "cancellationCode": "CBC-2026-0005",
+          "name": "Kabir Singh",
+          "category": "Cab Operations",
+          "ownerName": "Kabir Singh",
+          "status": "Closed",
+          "cancellationNo": "CBC-2026-0005",
+          "reason": "Sunrise Associates Cab Booking Cancellation 5",
+          "refundAmount": 6250,
+          "title": "Cab Booking Event Ticket Request"
+        },
+        {
+          "cancellationCode": "CBC-2026-0006",
+          "name": "Isha Nair",
+          "category": "Cab Service",
+          "ownerName": "Isha Nair",
+          "status": "Escalated",
+          "cancellationNo": "CBC-2026-0006",
+          "reason": "Vertex Admin Office Cab Booking Cancellation 6",
+          "refundAmount": 7500,
+          "title": "Cab Booking Cab Reservation"
+        }
+      ]
+    }
+  ]
+}
